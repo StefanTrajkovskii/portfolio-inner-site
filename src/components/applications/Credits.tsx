@@ -7,8 +7,12 @@ export interface CreditsProps extends WindowAppProps {}
 
 const CREDITS = [
     {
+        title: 'Engineering',
+        rows: [['Stefan Trajkovski', 'Programming, Design, & Development']],
+    },
+    {
         title: 'Engineering & Design',
-        rows: [['Henry Heffernan', 'All']],
+        rows: [['Henry Heffernan', 'Programming, Design, & Development']],
     },
     {
         title: 'Modeling & Texturing',
@@ -27,18 +31,10 @@ const CREDITS = [
         ],
     },
     {
-        title: 'Special Thanks',
-        rows: [
-            ['Bruno Simon', 'SimonDev'],
-            ['Lorelei Kravinsky', 'Scott Bass'],
-            ['Trey Briccetti', 'Mom, Dad & Angela'],
-        ],
-    },
-    {
         title: 'Inspiration',
         rows: [
-            ['Bruno Simon', 'Jesse Zhou'],
-            ['Pink Yellow', 'Vivek Patel'],
+            ['Henry Heffernan', 'Jesse Zhou'],
+            ['Bruno Simon', 'Vivek Patel']
         ],
     },
 ];
@@ -78,7 +74,7 @@ const Credits: React.FC<CreditsProps> = (props) => {
             closeWindow={props.onClose}
             onInteract={props.onInteract}
             minimizeWindow={props.onMinimize}
-            bottomLeftText={'© Copyright 2022 Henry Heffernan'}
+            bottomLeftText={'© Copyright 2025 Stefan Trajkovski'}
         >
             <div
                 onMouseDown={nextSlide}
@@ -86,7 +82,7 @@ const Credits: React.FC<CreditsProps> = (props) => {
                 style={styles.credits}
             >
                 <h2>Credits</h2>
-                <p>henryheffernan.com, 2022</p>
+                <p>stefantrajkovski.com, 2025</p>
                 <br />
                 <br />
                 <br />
