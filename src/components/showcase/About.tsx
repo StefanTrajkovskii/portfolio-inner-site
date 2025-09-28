@@ -1,6 +1,6 @@
 import React from 'react';
 import me from '../../assets/pictures/workingAtComputer.jpg';
-import meNow from '../../assets/pictures/currentme.jpg';
+import meNow from '../../assets/pictures/cropped_stif_u_banjarka_na_laptop.jpg';
 import { Link } from 'react-router-dom';
 import ResumeDownload from './ResumeDownload';
 
@@ -16,9 +16,7 @@ const About: React.FC<AboutProps> = (props) => {
             <br />
             <div className="text-block">
                 <p>
-                    I'm a software engineer currently working at Vercel! In May
-                    of 2022 I graduated from Rensselaer Polytechnic Institute
-                    with my BS in Computer Science.
+                    I’m a software engineer currently in my final year at Brainster Next College, pursuing my Bachelor’s degree in Software Engineering.
                 </p>
                 <br />
                 <p>
@@ -37,24 +35,11 @@ const About: React.FC<AboutProps> = (props) => {
                 <h3>About Me</h3>
                 <br />
                 <p>
-                    From a young age, I have had a curiosity about how things
-                    worked. This naturally led me to become absolutely obsessed
-                    with Lego and I fell in love with building things. In
-                    elementary school, I joined the Lego Robotics team at my
-                    local middle school, which was my first real exposure to
-                    programming. In 2008, my family and I moved across the
-                    country from California to New York, where I attended middle
-                    school, high school, and college.
+                    From a young age, I was deeply interested in computers and had an obsession with building things. By the time I was 15, I built my first computer from individual components, and since then I’ve built three in total. That hands-on curiosity with technology naturally pushed me toward software engineering.
                 </p>
                 <br />
                 <div className="captioned-image">
-                    <img src={me} style={styles.image} alt="" />
-                    <p>
-                        <sub>
-                            <b>Figure 1:</b> A real photo of me developing this
-                            website :)
-                        </sub>
-                    </p>
+                    
                 </div>
 
                 <p>
@@ -122,7 +107,7 @@ const About: React.FC<AboutProps> = (props) => {
                         <img src={meNow} style={styles.image} alt="" />
                         <p>
                             <sub>
-                                <b>Figure 2:</b> Me, April 2022
+                                <b>Figure 2:</b> Me, 2015
                             </sub>
                         </p>
                     </div>
