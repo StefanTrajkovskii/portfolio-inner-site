@@ -10,71 +10,48 @@ const Experience: React.FC<ExperienceProps> = (props) => {
             <div style={styles.headerContainer}>
                 <div style={styles.header}>
                     <div style={styles.headerRow}>
-                        <h1>Hover</h1>
+                        <h1>Gemak Trade</h1>
                         <a
                             rel="noreferrer"
                             target="_blank"
-                            href={'https://hover.gg/'}
+                            href={'https://gemak.mk/home-en/'}
                         >
-                            <h4>www.hover.gg</h4>
+                            <h4>www.gemak.mk</h4>
                         </a>
                     </div>
                     <div style={styles.headerRow}>
-                        <h3>Frontend Engineer</h3>
+                        <h3>Frontend Engineer | Freelance</h3>
                         <b>
-                            <p>Summer 2020 - Fall 2021</p>
+                            <p>May 2025 - Present</p>
                         </b>
                     </div>
                 </div>
             </div>
             <div className="text-block">
                 <p>
-                    Targeted towards online content creators and streamers
-                    looking to build a brand, Hover is the home of over 150K
-                    users. Written in Typescript using React, React-Native,
-                    Framer, Express, and Redux.
+                    Developed and delivered 3 web applications utilizing
+                    HTML5, CSS, Tailwind CSS, React, TypeScript, and Next.js.
                 </p>
                 <br />
                 <ul>
                     <li>
                         <p>
-                            Architected and engineered the vertical scrolling
-                            discover player which, at its daily peak, was
-                            responsible for generating over 600,000 views across
-                            20,000 active users.
+                            Engineered responsive UI components to enhance cross-device compatibility and user experience. 
                         </p>
                     </li>
                     <li>
                         <p>
-                            Designed and implemented multiple features to
-                            increase app usability and user experience while
-                            ensuring the quality, maintainability and
-                            scalability of the front end as the user base grew
-                            by over 50,000.
+                            Implemented modern design practices and performance optimization techniques to improve application speed and efficiency 
                         </p>
                     </li>
                     <li>
                         <p>
-                            Coordinated major refactors targeted towards app
-                            optimization and performance resulting in a smoother
-                            user experience and accomplished by eliminating
-                            redundant re-renders and API calls by over 50%.
+                            Provided ongoing maintenance and updates for web applications based on client feedback.
                         </p>
                     </li>
                     <li>
                         <p>
-                            Directed and executed an internal migration of 3
-                            individual repositories to a single monorepo,
-                            greatly reducing overhead for developing new
-                            features, fixing bugs, and managing dependencies.
-                        </p>
-                    </li>
-                    <li>
-                        <p>
-                            Rebuilt the website with React and shared mobile app
-                            components allowing users to access a wide variety
-                            of app interactions entirely on the web, resulting
-                            in over 700,000 total site visits.
+                            Participated in weekly sprint planning and review meetings, providing accurate time estimates and progress updates.
                         </p>
                     </li>
                 </ul>
@@ -82,55 +59,55 @@ const Experience: React.FC<ExperienceProps> = (props) => {
             <div style={styles.headerContainer}>
                 <div style={styles.header}>
                     <div style={styles.headerRow}>
-                        <h1>BrACS</h1>
+                        <h1>Johnson Matthey</h1>
                         <a
                             target="_blank"
                             rel="noreferrer"
-                            href={'https://bracs.co/'}
+                            href={'https://matthey.com/'}
                         >
-                            <h4>www.bracs.co</h4>
+                            <h4>www.matthey.com</h4>
                         </a>
                     </div>
                     <div style={styles.headerRow}>
-                        <h3>Team Lead & Engineer</h3>
+                        <h3>Power Platform Developer</h3>
                         <b>
-                            <p>Fall 2021 - Spring 2022</p>
+                            <p>November 2024 - January 2025</p>
                         </b>
                     </div>
                 </div>
             </div>
             <div className="text-block">
                 <p>
-                    Supervised and developed the front end of bracs.co, a
-                    beautifully simple and effective bracket creation and
-                    management engine. Written in Typescript using React and
-                    deployed using AWS Elastic Beanstalk.
+                Completed a 3-month academic project as part of a team of 4,
+                focused on developing solutions with Microsoft Power Platform. 
+                Designed and delivered custom apps, automated workflows, 
+                and interactive dashboards to simulate real-world business use cases. 
+                Strengthened skills in problem-solving and collaborative teamwork within an agile environment.
                 </p>
                 <br />
                 <ul>
                     <li>
                         <p>
-                            Managed the project and team members by conducting
-                            bi-weekly stand-ups.
+                            Engineered responsive UI components to enhance cross-device compatibility
+                            and user experience.  
                         </p>
                     </li>
                     <li>
                         <p>
-                            Architected bracket view UI using React Flow and
-                            custom bracket data types built from binary trees.
+                            Designed and delivered custom applications, automated workflows, 
+                            and interactive dashboards to  address simulated business use cases.  
                         </p>
                     </li>
                     <li>
                         <p>
-                            Created conversion algorithms to serialize bracket
-                            tree data to allow for saving in the cloud.
+                            Strengthened expertise in problem-solving 
+                            and collaborative teamwork within a deadline-driven environment. 
                         </p>
                     </li>
                     <li>
                         <p>
-                            Implemented bracket generation utilities which
-                            employ gray code for proper team seeding and
-                            placement.
+                            Applied problem-solving skills to debug and optimize flows and apps, 
+                            ensuring reliability and performance under deadline constraints.
                         </p>
                     </li>
                 </ul>
