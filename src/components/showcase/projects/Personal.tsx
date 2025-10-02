@@ -18,8 +18,8 @@ const MusicProjects: React.FC<MusicProjectsProps> = (props) => {
 
     return (
         <div className="site-page-content">
-            <h1>Music & Sound</h1>
-            <h3>Ventures</h3>
+            <h1>Personal</h1>
+            <h3>Projects</h3>
             <br />
             <div className="text-block">
                 <p>
