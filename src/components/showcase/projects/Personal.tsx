@@ -1,15 +1,17 @@
 import React, { useState } from 'react';
 // @ts-ignore
-import house from '../../../assets/audio/house_master.mp3';
+// import house from '../../../assets/audio/house_master.mp3';
 // @ts-ignore
-import edge from '../../../assets/audio/edge_unmastered.mp3';
+// import edge from '../../../assets/audio/edge_unmastered.mp3';
 // @ts-ignore
 import dnb from '../../../assets/audio/break.mp3';
 // @ts-ignore
-import dnbDrums from '../../../assets/audio/dnb_drop_drums.mp3';
-import houseProject from '../../../assets/pictures/projects/audio/houseProject.png';
-import dnbDrumsProject from '../../../assets/pictures/projects/audio/dnbDrumsProject.png';
+// import dnbDrumsProject from '../../../assets/pictures/projects/audio/dnbDrumsProject.png';
+// @ts-ignore
+import threeDProject from '../../../assets/pictures/projects/software/3D-project.mp4';
 import { MusicPlayer } from '../../general';
+import VideoAsset from '../../general/VideoAsset';
+import Link from '../../general/Link';
 
 export interface MusicProjectsProps {}
 
@@ -21,112 +23,40 @@ const MusicProjects: React.FC<MusicProjectsProps> = (props) => {
             <h1>Personal</h1>
             <h3>Projects</h3>
             <br />
-            <div className="text-block">
-                <p>
-                    Music has been a passion of mine for my whole life. When I
-                    was 15 years old, I downloaded FL Studio and started to
-                    produce my own music. I found a wonderful community on
-                    reddit called r/edmproduction and in 2016 created the now
-                    popular discord server EDM Production with over 14k members.
-                </p>
-                <br />
-                <p>
-                    I don't release the music that I make publicly as I not only
-                    find it difficult to finish songs, but also it's not a
-                    priority of mine since I produce mostly because I enjoy the
-                    process of learning and creating. However if I am going to
-                    dedicate a whole page of my portfolio to my music, you bet
-                    I'll have some examples to showoff.
-                </p>
-                <br />
-                <p>
-                    Below are some more recent Musical Endeavors I've been
-                    working on. I hope you enjoy the music and enjoy the stories
-                    behind each of the tracks.
-                </p>
-            </div>
-            <h2>Exploring house</h2>
+            <h2>3D Project</h2>
             <br />
             <p>
-                In 2020 I went through a phase of really enjoying house. Some of
-                my favorite artists at the time were Malaa, Chirs Lake, Kyle
-                Walker and many more. Inspired, I decided to take a stab at
-                making some house tracks.
+                I've been learning 3D modeling and animation as a way to expand my creative skills. 
+                This project represents my journey into the world of 3D graphics, where I've been 
+                exploring different techniques and tools to bring ideas to life in three dimensions.
             </p>
             <br />
             <p>
-                I failed a few times as I wasn't really able to nail the style
-                and groove I was going for but ultimately ended up creating the
-                piece below.
+                Through trial and error, I've been developing my understanding of 3D workflows, 
+                from modeling and texturing to lighting and rendering. This project showcases 
+                some of the work I've created during this learning process.
             </p>
-            <br />
-
-            <MusicPlayer
-                src={house}
-                title="Timeless"
-                subtitle="Henry Heffernan - 2022"
-                currentSong={currentSong}
-                setCurrentSong={setCurrentSong}
-            />
-
             <br />
             <br />
             <div className="captioned-image">
-                <img src={houseProject} alt="" />
+                <VideoAsset src={threeDProject} />
                 <p>
                     <sub>
-                        <b>Figure 1:</b> A screenshot of the project file of
-                        Timeless. 64 tracks in total.
+                        <b>Figure 1:</b> Showcase of my 3D learning project demonstrating 
+                        modeling, texturing, and animation techniques.
                     </sub>
                 </p>
             </div>
-            <p>
-                I love so much about this track. I'm particularly very proud of
-                the composition and the trichotomy of the happy upbeat energy in
-                the intro and first drop, into the rich and euphoric bridge,
-                before delving into the darkness of the final build and drop. I
-                had an absolute blast making this back in the fall of 2020, and
-                every time I revisit it to tweak it just a little more, I have
-                so much fun.
-            </p>
+            <h3>Links:</h3>
+            <ul>
+                <li>
+                    <Link to="" outsideTo="https://3d-project-umber.vercel.app/" text="[ 3D Site ] - Website project" containerStyle={{display: 'inline'}} />
+                </li>
+                <li>
+                    <Link to="" outsideTo="https://github.com/StefanTrajkovskii/3d-project" text="[ GitHub ] - Repository" containerStyle={{display: 'inline'}} />
+                </li>
+            </ul>
             <br />
-            <p>
-                After making this track around fall 2020, my interest for house
-                overall was tapering off. Around this time I was starting to go
-                to the gym more consistently and ended up listening to a lot
-                more hard bass music, specifically drum & bass, mid tempo and of
-                course dubstep.
-            </p>
-            <br />
-            <h2>Mid-Tempo?</h2>
-            <br />
-            <p>
-                Only about a month after taking a step away from house I started
-                working on a mid-tempo track which I called edge. I did a lot of
-                experimenting with this track, and to this day I'm very proud
-                with how it turned out. I never got around to finishing it up
-                and giving it a proper outro, but I'm still very happy with it's
-                current state.
-            </p>
-            <br />
-            <MusicPlayer
-                src={edge}
-                title="Edge [W.I.P.]"
-                subtitle="Henry Heffernan - 2021"
-                currentSong={currentSong}
-                setCurrentSong={setCurrentSong}
-            />
-            <br />
-            <p>
-                This track is so dark and I love it! The bass and percussion are
-                the obvious stars of the piece, and I had a blast designing each
-                of them. The bass in this song is layered with a lot of textures
-                and they really give it a lot of the character it needs to be
-                the driving force of the track. The percussion on the other hand
-                gives the track a lot of depth in the high end so when
-                juxtaposed with the bass it radiates this dark and mysterious
-                vibe.
-            </p>
             <br />
             <h2>My love for Drum & Bass</h2>
             <br />
@@ -165,16 +95,8 @@ const MusicProjects: React.FC<MusicProjectsProps> = (props) => {
                 because it is drum and bass after all!
             </p>
             <br />
-            <MusicPlayer
-                src={dnbDrums}
-                title="Break [Drums and Sub]"
-                subtitle="Henry Heffernan - 2019/2022"
-                currentSong={currentSong}
-                setCurrentSong={setCurrentSong}
-            />
             <br />
             <div className="captioned-image">
-                <img src={dnbDrumsProject} alt="" />
                 <p>
                     <sub>
                         <b>Figure 2:</b> Drums and sub for the track Break. See

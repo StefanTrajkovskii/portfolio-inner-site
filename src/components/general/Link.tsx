@@ -33,6 +33,17 @@ const Link: React.FC<LinkProps> = (props) => {
         let isMounted = true;
         e.preventDefault();
         setActive(true);
+        
+        // Handle external links
+        if (props.outsideTo) {
+            window.open(props.outsideTo, '_blank', 'noopener,noreferrer');
+            setTimeout(() => {
+                if (isMounted) setActive(false);
+            }, 100);
+            return;
+        }
+        
+        // Handle internal navigation
         if (location.pathname !== `/${props.to}`) {
             setTimeout(() => {
                 if (isMounted) navigate(`/${props.to}`);
@@ -48,6 +59,9 @@ const Link: React.FC<LinkProps> = (props) => {
         };
     };
 
+    const isInline = props.containerStyle?.display === 'inline';
+    const LinkElement = isInline ? 'span' : 'h4';
+    
     return (
         <RouterLink
             to={`/${props.to}`}
@@ -55,7 +69,7 @@ const Link: React.FC<LinkProps> = (props) => {
             style={Object.assign({}, { display: 'flex' }, props.containerStyle)}
         >
             {isHere && <div style={styles.hereIndicator} />}
-            <h4
+            <LinkElement
                 className="router-link"
                 style={Object.assign(
                     {},
@@ -64,7 +78,7 @@ const Link: React.FC<LinkProps> = (props) => {
                 )}
             >
                 {props.text}
-            </h4>
+            </LinkElement>
         </RouterLink>
     );
 };
