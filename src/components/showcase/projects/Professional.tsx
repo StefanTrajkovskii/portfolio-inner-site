@@ -17,11 +17,6 @@ const SoftwareProjects: React.FC<SoftwareProjectsProps> = (props) => {
             <h1>Professional</h1>
             <h3>Projects</h3>
             <br />
-            <p>
-                Below are some of my favorite software projects I have worked on
-                over the last few years.
-            </p>
-            <br />
             <ResumeDownload />
             <br />
             <div className="text-block">
